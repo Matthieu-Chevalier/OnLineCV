@@ -1,0 +1,174 @@
+@import url(/fonts/stylesheet.css);
+:root{
+    /*Variables*/
+    --t1-color : #3B8EA5;
+    --t2-color: #F49E4C;
+    --txt-color:#31393C;
+    --bg-color: #d6c0ab;
+    --bg-light-color:#fffcf7;
+    --portrait-size: 150px;
+    --radius : 10px;
+    font-family: Calibri , 'Times New Roman', Times, serif;
+    font-size:13px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    background-color: var(--bg-color)
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 21cm;
+    height: 29.7cm;
+    text-align: justify;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+dl{
+    margin: 0;
+}
+.subdl{
+    display: flex;
+    justify-content: flex-start;
+}
+.subdl>dl{
+    margin-right: 40px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--bg-light-color);
+    margin: 3px;
+    padding-top:5px;
+}
+a{
+    color: var(--txt-color);
+}
+ul{
+    justify-self: center;
+    list-style: none;
+    padding:0;
+    padding-inline-start: 20px;
+}
+ul.description{
+    margin:0px;
+    padding-inline-start: 20px;
+}
+ul.description > li{
+    padding-inline-start: 30;
+}
+li::first-letter{
+   text-transform:  capitalize ;
+}
+.entreprise +.saut{
+    padding-inline-start: 20px;
+}
+.date +.saut{
+    padding-inline-start: 10px;
+}
+h2{
+    font-family: iceberg;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    line-height: normal;
+    color: var(--t1-color);
+    text-align: center;
+}
+dt{
+    color: var(--t1-color);
+    padding-inline-start: 20px;
+}
+dt::after{
+    content: ":";
+}
+.date::after{
+    content: ": ";
+}
+dd{
+    text-align: justify;
+}
+.ProfessionalBackground,.right{
+    flex:3;
+    
+}
+.Projects,.hard,.left{
+    flex: 2;
+}
+.infoperso,.soft,.portrait,.objectif,.graduation,.other,.hobby,.skills,.MySelf{
+    flex:1;
+}
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-start: 20px;
+}
+.graduation{
+    display: flex;
+    
+    justify-content: space-between;
+    padding-inline-start: 20px;
+
+}
+.grad>.date
+{
+    display: in-block;
+    padding-left: 20px;
+}
+.entreprise{
+    font-weight: bold;
+}
+.date{
+    font-style: italic;
+    text-transform:  capitalize ;
+
+}
+
+
+.separator
+{
+    border-bottom-width: 2px;
+    border-bottom-style:solid ;
+    border-image-slice: 1;
+    border-image-source:linear-gradient(to right, var(--bg-light-color) 10%,var(--bg-color) 40%,var(--bg-color)60%,var(--bg-light-color) 90%);
+}
+
+p{
+    padding:10px;
+    text-indent: 20px;
+}
+
+.photo
+{
+    background: url("portrait.jpg") center center no-repeat;
+    background-size: var(--portrait-size);;
+    width: var(--portrait-size);
+    height: var(--portrait-size);
+    /* border: solid var(--t1-color) 2px;*/
+    box-shadow: 5px 5px 4px -4px var(--t1-color);
+    border-radius: 50%;
+}
+.portrait
+{
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow:none ;
+}
+
